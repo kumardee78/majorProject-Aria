@@ -332,7 +332,7 @@ nav .icons i {
   font-size: 0.8rem;
   text-transform: uppercase;
   padding: 0.35rem 1.1rem;
-  margin: 0 0.25rem;
+  margin: 0.2rem 0.25rem;
   border-radius: 5px;
 }
 
@@ -805,7 +805,13 @@ select {
   cursor: pointer;
   border: 2px solid #14bf98;
 }
-
+#hamburger {
+  display: none;
+}
+#callme .right input[type="text"]:focus+label {
+  font-size: 0.7rem;
+  top: 0.2rem;
+}
 @media screen and (max-width: 600px) {
   #callme .container {
     display: grid;
@@ -819,15 +825,6 @@ select {
     padding: 1rem;
   }
 }
-
-#callme .right input[type="text"]:focus+label {
-  font-size: 0.7rem;
-  top: 0.2rem;
-}
-
-
-
-
 
 @media screen and (max-width: 1230px) {
   #services .section-heading, #projects .section-heading, #projects .categories, #testimonials .section-heading {
@@ -903,10 +900,6 @@ select {
   }
 }
 
-#hamburger {
-  display: none;
-}
-
 @media screen and (max-width: 915px) {
   nav ul {
     display: none;
@@ -918,7 +911,6 @@ select {
     font-size: 2rem;
   }
 }
-
 
 @media screen and (max-width: 850px) {
   .text h1 {
@@ -994,4 +986,89 @@ select {
     width: 100%;
     margin-top: 2rem;
   }
+}
+@media screen and (max-width:640px){
+  #wrapper nav{
+    padding: 1.5rem;
+  }
+  #wrapper main .text{
+    padding: 0;
+    width: 80%;
+  }
+  footer .top{
+    display: block;
+
+  }
+  footer .top .left{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  footer .top .right{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+  #contact{
+    display: block;
+    padding: 2rem;
+  }
+  #contact .right{
+    padding: 0rem;
+  }
+  #projects{
+    padding: 2rem 2rem;
+  }
+  #projects .section-heading{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  #callme .left, #callme .right {
+    padding: 1rem;
+  }
+  #testimonials {
+    padding:4rem 1.8rem;
+  }
+  #testimonials .section-heading{
+    width: 100%;
+  }
+  #services{
+    padding: 4rem 1.5rem;
+  }
+  #services .section-heading{
+    width: 100%;
+  }
+  .service .content a {
+    left: 30%;
+  }
+
+}
+@media screen and (max-width:280px){
+  #wrapper nav{
+    padding: 1rem;
+  }
+  #wrapper main .text{
+    padding: 0;
+    width: 100%;
+    
+  }
+  #wrapper main .text h1{
+    font-size: 2rem;
+  }
+  #contact{
+    display: block;
+    padding: 2rem;
+  }
+  #contact .left, #contact .right{
+    width: 100%;
+  }
+  #contact .right{
+    padding: 0rem;
+  }
+  .service .content a {
+    left: 25%;
+  }
+
+
+
 }
